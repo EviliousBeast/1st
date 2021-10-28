@@ -2,7 +2,7 @@
 
 void main()
 {
-    int arr[50], n, i, max;
+    int arr[50], n, i, max = 0;
 
     printf("Enter the size of array: ");
     scanf("%d", &n);
@@ -12,7 +12,7 @@ void main()
         scanf("%d", &arr[i]);
 
     max = arr[0];
-    for (i = 0; i <= n; i++)
+    for (i = 0; i < n; i++)
     {
         if (arr[i] > max)
             max = arr[i];
